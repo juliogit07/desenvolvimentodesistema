@@ -1,65 +1,640 @@
 <!DOCTYPE html>
-<html lang="pt-br
-">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aplicações em JavaScript</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            min-height: 100vh;
+        }
+
+        /* NAVBAR */
+        nav{
+            width: 100%;
+            padding: 20px 60px;
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .logo{
+            font-size: 24px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        .menu{
+            display: flex;
+            gap: 25px;
+        }
+
+        .menu a{
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .menu a:hover{
+            color: #38bdf8;
+        }
+
+        /* HERO */
+        .hero{
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1{
+            font-size: 55px;
+            margin-bottom: 20px;
+            color: #38bdf8;
+        }
+
+        .hero p{
+            font-size: 20px;
+            color: #cbd5e1;
+            margin-bottom: 40px;
+        }
+
+        /* CARD */
+        .card{
+            width: 700px;
+            max-width: 90%;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 35px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+            transition: 0.4s;
+        }
+
+        .card:hover{
+            transform: translateY(-5px);
+        }
+
+        .card h2{
+            color: #38bdf8;
+            margin-bottom: 15px;
+            font-size: 30px;
+        }
+
+        .card p{
+            line-height: 1.8;
+            color: #e2e8f0;
+            font-size: 18px;
+        }
+
+        code{
+            background: rgba(0,0,0,0.3);
+            padding: 3px 8px;
+            border-radius: 5px;
+            color: #facc15;
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <!-- NAV -->
+    <nav>
+        <div class="logo">Dev Sistema Julio Cesar</div>
+
+        <div class="menu">
+            <a href="#">Início</a>
+            <a href="#">JavaScript</a>
+            <a href="#">Projetos</a>
+            <a href="#">Contato</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <h1>Aplicações em JavaScript</h1>
+
+        <p>
+            Aprenda conceitos fundamentais para desenvolver sistemas modernos.
+        </p>
+
+        <!-- CARD -->
+        <div class="card">
+            <h2>Uso dos condicionais IF no JavaScript</h2>
+
+            <p>
+                O condicional <code>if</code> é utilizado para executar uma ação
+                apenas quando uma condição for verdadeira.
+            </p>
+
+            <br>
+
+            <p>
+                Exemplo:
+            </p>
+
+            <br>
+
+            <p>
+                <code>
+                    let idade = 18;
+                    <br><br>
+                    if(idade >= 18){
+                    <br>
+                    &nbsp;&nbsp;console.log("Maior de idade");
+                    <br>
+                    }
+                </code>
+            </p>
+
+            <br>
+
+            <p>
+                Nesse exemplo, a mensagem será exibida apenas se a variável
+                <code>idade</code> for maior ou igual a 18.
+            </p>
+        </div>
+
+    </section>
+
 </body>
-</html> <!doctype html>
-<html lang="en" data-bs-theme="light">
-    <head>
-        <title>Title</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+</html><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicações em JavaScript</title>
 
-        <!-- Bootstrap CSS v5.3.8 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-    </head>
+        body{
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            min-height: 100vh;
+        }
 
-    <body>
-        <header>
-            <!-- place navbar here  
-             .c
-             .row  
+        /* NAVBAR */
+        nav{
+            width: 100%;
+            padding: 20px 60px;
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
 
-        </header>
-        <main></main>
-        <footer>
-            <!-- place footer here -->
-        </footer>
-        <!-- Bootstrap JavaScript Bundle (includes Popper) -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"
-        ></script>
-        <script src=""></script>
-    
+        .logo{
+            font-size: 24px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
 
+        .menu{
+            display: flex;
+            gap: 25px;
+        }
 
+        .menu a{
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
 
+        .menu a:hover{
+            color: #38bdf8;
+        }
 
-</html> 
+        /* HERO */
+        .hero{
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
 
-</style> 
+        .hero h1{
+            font-size: 55px;
+            margin-bottom: 20px;
+            color: #38bdf8;
+        }
+
+        .hero p{
+            font-size: 20px;
+            color: #cbd5e1;
+            margin-bottom: 40px;
+        }
+
+        /* CARD */
+        .card{
+            width: 700px;
+            max-width: 90%;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 35px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+            transition: 0.4s;
+        }
+
+        .card:hover{
+            transform: translateY(-5px);
+        }
+
+        .card h2{
+            color: #38bdf8;
+            margin-bottom: 15px;
+            font-size: 30px;
+        }
+
+        .card p{
+            line-height: 1.8;
+            color: #e2e8f0;
+            font-size: 18px;
+        }
+
+        code{
+            background: rgba(0,0,0,0.3);
+            padding: 3px 8px;
+            border-radius: 5px;
+            color: #facc15;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <div class="logo">Dev Sistema Julio Cesar</div>
+
+        <div class="menu">
+            <a href="#">Início</a>
+            <a href="#">JavaScript</a>
+            <a href="#">Projetos</a>
+            <a href="#">Contato</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <h1>Aplicações em JavaScript</h1>
+
+        <p>
+            Aprenda conceitos fundamentais para desenvolver sistemas modernos.
+        </p>
+
+        <!-- CARD -->
+        <div class="card">
+            <h2>Uso dos condicionais IF no JavaScript</h2>
+
+            <p>
+                O condicional <code>if</code> é utilizado para executar uma ação
+                apenas quando uma condição for verdadeira.
+            </p>
+
+            <br>
+
+            <p>
+                Exemplo:
+            </p>
+
+            <br>
+
+            <p>
+                <code>
+                    let idade = 18;
+                    <br><br>
+                    if(idade >= 18){
+                    <br>
+                    &nbsp;&nbsp;console.log("Maior de idade");
+                    <br>
+                    }
+                </code>
+            </p>
+
+            <br>
+
+            <p>
+                Nesse exemplo, a mensagem será exibida apenas se a variável
+                <code>idade</code> for maior ou igual a 18.
+            </p>
+        </div>
+
+    </section>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aplicações em JavaScript</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: #;
-color: 
+    font-family: 'Poppins', sans-serif;
+    background: #0f172a;
+    color: white;
+    overflow-x: hidden;
+}
 
+/* FUNDO */
+body::before{
+    content: "";
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    background: #2563eb;
+    filter: blur(180px);
+    top: -150px;
+    left: -150px;
+    opacity: 0.4;
+    z-index: -1;
+}
 
+body::after{
+    content: "";
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    background: #7c3aed;
+    filter: blur(180px);
+    bottom: -150px;
+    right: -100px;
+    opacity: 0.4;
+    z-index: -1;
+}
 
+/* NAVBAR */
+nav{
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(12px);
+    background: rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 
+.logo{
+    font-size: 28px;
+    font-weight: 700;
+    color: #38bdf8;
+}
 
-        
+.logo span{
+    color: white;
+}
+
+.menu{
+    display: flex;
+    gap: 30px;
+}
+
+.menu a{
+    color: #e2e8f0;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.menu a:hover{
+    color: #38bdf8;
+}
+
+/* HERO */
+.hero{
+    min-height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.hero-content{
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+}
+
+.hero h1{
+    font-size: 65px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero h1 span{
+    color: #38bdf8;
+}
+
+.hero p{
+    color: #cbd5e1;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+/* CARD */
+.card{
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 25px;
+    padding: 40px;
+    text-align: left;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    transition: 0.4s;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+.card h2{
+    color: #38bdf8;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.card p{
+    color: #e2e8f0;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.code{
+    margin: 25px 0;
+    background: #020617;
+    padding: 25px;
+    border-radius: 15px;
+    overflow-x: auto;
+    border-left: 5px solid #38bdf8;
+}
+
+.code code{
+    color: #f8fafc;
+    font-size: 15px;
+}
+
+/* BOTÃO */
+.btn{
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 30px;
+    background: linear-gradient(45deg,#38bdf8,#2563eb);
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(56,189,248,0.5);
+}
+
+/* RESPONSIVO */
+@media(max-width:768px){
+
+    nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1{
+        font-size: 42px;
+    }
+
+    .hero p{
+        font-size: 17px;
+    }
+
+    .card{
+        padding: 25px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+
+    <div class="logo">
+        Dev Sistema <span>Julio Cesar</span>
+    </div>
+
+    <div class="menu">
+        <a href="#">Início</a>
+        <a href="#">JavaScript</a>
+        <a href="#">Projetos</a>
+        <a href="#">Contato</a>
+    </div>
+
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Aplicações em <span>JavaScript</span>
+        </h1>
+
+        <p>
+            Aprenda lógica de programação, condicionais e desenvolvimento web moderno.
+        </p>
+
+        <!-- CARD -->
+        <div class="card">
+
+            <h2>Uso dos condicionais IF no JavaScript</h2>
+
+            <p>
+                O condicional <strong>if</strong> é utilizado para executar
+                uma ação apenas quando determinada condição for verdadeira.
+            </p>
+
+            <div class="code">
+<code>
+let idade = 18;
+
+if(idade >= 18){
+    console.log("Maior de idade");
+}
+</code>
+            </div>
+
+            <p>
+                Nesse exemplo, a mensagem será exibida apenas se a variável
+                <strong>idade</strong> for maior ou igual a 18.
+            </p>
+
+            <a href="#" class="btn">
+                Aprender Mais
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
