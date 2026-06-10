@@ -22,7 +22,7 @@ if (faturamento>= metamensal)
     console.log
 
 
-  }
+
     
 
 
