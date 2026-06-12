@@ -1,0 +1,31 @@
+<script>
+
+let nome = prompt ("digite o nome do ALUNO");
+if (nome !== null && nome !== "") {
+    let nota = prompt("digite a nota do ALUNO: "+nome)
+     while (nota!== null) {
+        console.log(nome)
+        let notanum = Number(nota);
+        if (Number.isFinite(notanum)) {
+            if (notanum < 3) {
+                alert("ALUNO: " + nome + "\n NOTA: " + notanum + "\n RESULTADO: REPROVADO")
+            } else if (notanum < 6) {
+                alert("ALUNO: " + nome + "\n NOTA: " + notanum + "\n RESULTADO: EM RECUPERAÇÃO")
+            } else if (notanum < 10) {
+                 alert("ALUNO: " + nome + "\n NOTA: " + notanum + "\n RESULTADO: APROVADO")
+                 
+                } else {
+                alert("ALUNO: " + nome + "\n NOTA: " + notanum + "\n RESULTADO: PARABÉNS PELA NOTA MÁXIMA")
+
+            }
+                
+            }
+             nota = prompt("digite a nota do ALUNO: "+nome)
+        }
+    }
+
+
+
+
+
+</script>
