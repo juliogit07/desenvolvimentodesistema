@@ -1,0 +1,30 @@
+<script>
+    let listavalores = [
+        "R$ 100",
+        "R$ 200",
+        "R$ 300",
+        "R$ 400",
+        "R$ 500"
+    ]
+    
+    while (listavalores.length > 0) {
+        let resultado = 'lista valores\n';
+        
+        let tamanho = listavalores.length;
+        
+        
+        for (let i = 0; i < tamanho; i++) {
+            resultado += `${i + 1}.${listavalores[i]}\n`
+        }
+        let confirmar = confirm(resultado +"\nDESEJA EXCLUIR O ÚLTIMO ÍTEM DA LISTA?")
+        if (confirmar) {
+            listavalores.pop();
+
+           
+        } else {
+            break
+
+        }
+    }
+    alert("operação cancelada")
+</script>

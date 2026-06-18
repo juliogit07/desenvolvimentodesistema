@@ -1,0 +1,24 @@
+<script>
+let países = [
+    "BRASIL",
+    "FRANÇA",
+    "ESPANHA",
+    "PORTUGAL",
+    "INGLATERRA",
+    "HOLANDA",
+    "ARGENTINA",
+]
+
+   let tamanho = lista.length
+   let i = 0;
+   let n = i+1
+   
+   let retorno = "países"
+   for(i;i<tamanho;i++){
+    retorno += `${i+1}. ${lista[i]}\n`
+   
+}
+    alert(retorno)
+
+
+</script>
