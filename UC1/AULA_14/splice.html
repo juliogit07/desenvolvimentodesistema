@@ -1,0 +1,22 @@
+<script>
+
+   let paises = ["BRASIL", "ARGENTINA", "FRANÇA", "ALEMANHA", "ITÁLIA"]
+   let exibirdados = ""
+   paises.forEach(function(país,i){
+    exibirdados += `${i+1}.${país}\n`
+   })
+  let input = Number(prompt(exibirdados+"DIGITE O NÚMERO DO PAÍS PARA REMOVÊ-LO"))
+
+  while(input !==0){
+    
+    paises.splice(input-1,1)
+    
+    let print = "paises\n"
+    paises.forEach(function(pais, i) {
+        print += `${i+1}.${pais}\n`
+    })
+    alert(print)
+    input = Number(prompt(print+"DIGITE O NÚMERO DO PAÍS PARA REMOVÊ-LO"))
+}
+
+</script>

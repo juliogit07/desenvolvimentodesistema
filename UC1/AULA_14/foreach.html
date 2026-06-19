@@ -1,0 +1,53 @@
+<script>
+    let produtos = [
+        "COMPUTADORES",
+        "MONITORES",
+        "TECLADO",
+        "MOUSE"
+    ]
+
+    let icones = [
+        "🖥️",
+        "💻",
+        "⌨️",
+        "🖱️"
+    ]
+
+   let resultado = "LISTA DE PRODUTOS"
+    resultado +="\n";
+
+    produtos.forEach(function(nomedoproduto,i){
+        resultado += `${icones[i]}.${nomedoproduto} posição: ${i}\n`
+    })
+
+    alert(resultado)
+
+
+   
+    
+</script>
+
+
+
+
+
+
+
+
+<!-- <script>
+   let pessoas = [
+    "Julio",
+    "Nicolas",
+    "Miguel",
+    "Daniele"
+   ]
+   let resultado = "nome das pessoas"
+   resultado +="\n";
+
+   pessoas.forEach(function(nomepessoa,i){
+    resultado += `${i+1}.${nomepessoa}\n posição: ${i}\n`
+   })
+
+   alert(resultado)
+   
+</script> -->

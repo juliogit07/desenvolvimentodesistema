@@ -31,3 +31,7 @@ node nomedoarquivo.js
 
 ls
 <!-- lista todo o conteúdo do diretório>
+
+
+
+
