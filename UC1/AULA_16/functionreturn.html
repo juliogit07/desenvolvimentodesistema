@@ -1,0 +1,45 @@
+<script>
+    let países = [
+    "BRASIL",
+    "ARGENTINA",
+    "FRANÇA",
+    "ALEMANHA",
+    "ESPANHA"
+
+]
+    let nomes = [
+        "DANIELE",
+        "JULIO",
+        "NICOLAS",
+        "BRUNO",
+        "MIGUEL"
+]
+
+    function exibirlista(lista1,lista2){
+
+
+        let exibir = "cadastro de países e nomes\n";
+        
+        lista1.forEach(function(dados,i) {
+        
+            exibir += `${i+1}-${dados}\n`
+        });
+
+         
+        lista2.forEach(function(dados,i) {
+        
+            exibir += `${i+1}-${dados}\n`
+        });
+
+
+        return exibir; 
+
+    }
+
+    alert(exibirlista(países,nomes))
+
+
+
+
+
+</script>
