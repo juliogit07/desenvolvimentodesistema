@@ -1,0 +1,37 @@
+<script>
+  function verificarsituacao() {
+
+let media = Number(prompt("digite a média"));
+if (media < 0 || media > 10) {
+
+    alert("erro: os números devem estar entre 0 e 10");
+    return;
+
+
+}
+
+if (media > 7) {
+
+    return "aprovado";
+
+ } else if (media >= 5) {
+
+    return "em recuperação";
+ } else {
+ return "reprovado";
+
+ }
+
+
+}
+
+  let resultado = verificarsituacao();
+
+if (resultado !== undefined) {
+
+    alert(resultado)
+}
+
+
+
+</script>
