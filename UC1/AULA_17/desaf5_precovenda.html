@@ -1,0 +1,31 @@
+<script>
+    
+function calcularPrecoVenda() {
+    let custo = Number(prompt("Digite o valor de custo:"));
+    let percentualLucro = Number(prompt("Digite o percentual de lucro:"));
+
+    
+    if (custo <= 0 || isNaN(custo)) {
+        alert("O valor de custo deve ser maior que zero.");
+        return;
+    }
+
+    if (percentualLucro < 0 || isNaN(percentualLucro)) {
+        alert("O percentual de lucro não pode ser negativo.");
+        return;
+    }
+
+    
+    let precoVenda = custo + (custo * percentualLucro / 100);
+
+    return precoVenda;
+}
+
+
+let resultado = calcularPrecoVenda();
+
+if (resultado !== undefined) {
+    alert("Preço de venda: R$ " + resultado);
+}
+
+</script>

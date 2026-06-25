@@ -1,0 +1,33 @@
+<script>
+function calcularDesconto() {
+    let valorcompra = Number(prompt("Digite o valor da compra:"));
+    let percentualdesconto = Number(prompt("Digite o percentual de desconto:"));
+
+    
+    if (isNaN(valorcompra) || valorcompra <= 0) {
+        alert("Erro: o valor da compra deve ser maior que zero.");
+        return;
+    }
+
+    
+    if (isNaN(percentualdesconto) || percentualdesconto < 0) {
+        alert("Erro: o percentual de desconto não pode ser negativo.");
+        return;
+    }
+
+    
+    let valordesconto = valorcompra * (percentualdesconto / 100);
+    let valorfinal = valorcompra - valordesconto;
+
+    
+    alert(
+        "Valor da compra: R$ " + valorcompra.toFixed(2) +
+        "\nDesconto: R$ " + valordesconto.toFixed(2) +
+        "\nValor final: R$ " + valorfinal.toFixed(2)
+    );
+}
+
+
+calcularDesconto();
+
+</script>
